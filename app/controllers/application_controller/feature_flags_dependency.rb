@@ -35,12 +35,12 @@ class ApplicationController
   helper_method :home_v2_enabled?
 
   def student_identifier_enabled?
-    logged_in? && current_user.feature_enabled?(:student_identifier)
+    logged_in?
   end
   helper_method :student_identifier_enabled?
 
   def team_management_enabled?
-    logged_in? && current_user.feature_enabled?(:team_management)
+    logged_in?
   end
   helper_method :team_management_enabled?
 
